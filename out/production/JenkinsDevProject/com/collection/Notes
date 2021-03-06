@@ -1,0 +1,37 @@
+Jenkins:
+what are servers:
+1. Stay power on all the time
+2. Strong internet connection (in GBps) all the time
+3. A lot of resources like RAM Disk etc
+
+1) Developers will develop the code
+2) Runs the unit tests if everything goes well ask the DevOps person to build that code and deploy the code on Dev servers
+3) Developer verifies that code on Dev server
+4) Request to DevOps person to deploy it on the integration server
+5) Tester will ask DevOps person to deploy the code to QA server
+6) Tester may deploy it on the Load server (is load server something where we perform performance testing),
+Security testing servers
+7) DevOps person deploy application on Staging servers (replica of production server) UAT server
+(user acceptance testing (UAT) is where the demo happens) on which UAT is performed.
+8) To production server
+
+Issues in the manual Testing/deployment
+1) Time consuming
+2) if Multiple developers are working there can be issues in build
+and to ix those issues we may need to look all of the newly added code
+3) No Automation means a lot of manual effort
+
+What is Jenkins?
+open source automation server, which will help us to automate the application deployment in our infrastructure.
+
+How to build a simple job
+http://jenkins.syntaxtechs.net:8080/
+user name admin
+password admin
+ click on new item
+  give it a name
+   click on freestyle project
+    click on apply save
+     scroll down to the page and click on build step
+      write echo "My first ..."
+       click on save and build the project
